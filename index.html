@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bárbara Cosméticos</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      header {
+        width: 100%;
+        height: 60px;
+        background-color: #ce93d8;
+        -webkit-box-shadow: 0px 0px 13px -2px rgba(0, 0, 0, 0.34);
+        -moz-box-shadow: 0px 0px 13px -2px rgba(0, 0, 0, 0.34);
+        box-shadow: 0px 0px 13px -2px rgba(0, 0, 0, 0.34);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+      }
+      header .logo {
+        color: white;
+        width: 20%;
+      }
+      header .search-bar {
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+      }
+      header .search-bar input {
+        width: 100%;
+        border: 1px solid #e0e0e0;
+        height: 30px;
+        padding: 0;
+      }
+      header .search-bar .search {
+        height: 30px;
+        width: 50px;
+        background-color: white;
+        cursor: pointer;
+        border: 1px solid #e0e0e0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #container {
+        height: 500px;
+
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 30px;
+      }
+      #container .itens-container {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+      #container .itens-container .item {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        border: 1px solid #e0e0e0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        Bárbara Cosméticos
+      </div>
+      <div class="search-bar">
+        <input type="text" />
+        <div class="search">
+          <img src="search-black-18dp.svg" />
+        </div>
+      </div>
+      <div class="access">
+        <div class="login">
+          Cadastrar
+        </div>
+        <div class="shopping-cart"></div>
+      </div>
+    </header>
+    <div id="container">
+      <div class="itens-container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+    </div>
+  </body>
+</html>
