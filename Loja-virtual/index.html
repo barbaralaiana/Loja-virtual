@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bárbara Cosméticos</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      header {
+        width: 100%;
+        height: 60px;
+        background-color: #ce93d8;
+        -webkit-box-shadow: 0px 0px 13px -2px rgba(0, 0, 0, 0.34);
+        -moz-box-shadow: 0px 0px 13px -2px rgba(0, 0, 0, 0.34);
+        box-shadow: 0px 0px 13px -2px rgba(0, 0, 0, 0.34);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+      }
+      header .access {
+        display: flex;
+        flex-direction: row;
+      }
+      header .login {
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+      }
+      header .logo {
+        color: white;
+        width: 20%;
+      }
+      header .search-bar {
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+      }
+      header .search-bar input {
+        width: 100%;
+        border: 1px solid #e0e0e0;
+        height: 30px;
+        padding: 0;
+      }
+      header .search-bar .search {
+        height: 30px;
+        width: 50px;
+        background-color: white;
+        cursor: pointer;
+        border: 1px solid #e0e0e0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #container {
+        height: 500px;
+
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 30px;
+      }
+      #container .itens-container {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+      #container .itens-container .item {
+        min-width: 200px;
+        min-height: 350px;
+        margin: 10px;
+        border: 1px solid #e0e0e0;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #container .itens-container .item:hover {
+        cursor: pointer;
+      }
+      #container .itens-container .item .description {
+        max-width: 200px;
+      }
+      #container .itens-container .item .description p:hover {
+        color: #ba68c8;
+      }
+      #container .itens-container .item .description p {
+        font-size: 14px;
+      }
+      #container .itens-container .item .description span {
+        color: #7b1fa2;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      #container .itens-container .item .description .cart-area {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      #container .itens-container .item .description .cart-area .add-cart {
+        color: crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        Bárbara Cosméticos
+      </div>
+      <div class="search-bar">
+        <input type="text" />
+        <div class="search">
+          <img src="icons/search-black-18dp.svg" />
+        </div>
+      </div>
+      <div class="access">
+        <div class="login">
+          Cadastrar
+        </div>
+        <div class="shopping-cart">
+          <img src="icons/shopping_cart-24px.svg" />
+        </div>
+      </div>
+    </header>
+    <div id="container">
+      <div class="itens-container">
+        <div class="item">
+          <img src="produtos/base.png" />
+          <div class="description">
+            <p>
+              Base Líquida Supermate 30ml Cor 01
+            </p>
+            <div class="cart-area">
+              <span>R$ 50,00</span>
+              <div class="add-cart">
+                <img src="icons/add_shopping_cart-24px.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="produtos/batom-liquido.jpg" />
+          <div class="description">
+            <p>
+              Batom Líquido Supermate Metálico Marronluz
+            </p>
+            <div class="cart-area">
+              <span>
+                R$30,00
+              </span>
+              <div class="add-cart">
+                <img src="icons/add_shopping_cart-24px.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="produtos/batom-liquido.png" />
+          <div class="description">
+            <p>
+              Batom Líquido Supermate Vinheli
+            </p>
+            <div class="cart-area">
+              <span>
+                R$30,00
+              </span>
+              <div class="add-cart">
+                <img src="icons/add_shopping_cart-24px.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="produtos/batom-matte.png" />
+          <div class="description">
+            <p>
+              Batom Mate Alta Pigmentação Rosetom
+            </p>
+            <div class="cart-area">
+              <span>
+                R$39,90
+              </span>
+              <div class="add-cart">
+                <img src="icons/add_shopping_cart-24px.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="produtos/creme.png" />
+          <div class="description">
+            <p>
+              Kit Cuidados: Álcool Gel + Loção Hidratante Desodorante Corporal +
+              Desodorante Colônia Seja como Flor 10ml
+            </p>
+            <div class="cart-area">
+              <span>
+                R$ 95,90
+              </span>
+              <div class="add-cart">
+                <img src="icons/add_shopping_cart-24px.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            src="produtos/kit-paleta-de-sombras-e-batom-liquido-supermate-rosetali.jpg"
+          />
+          <div class="description">
+            <p>
+              Kit Paleta de Sombras Adoro Rosês + Batom Líquido Supermate
+              Rosetali + Caixa Cubo G
+            </p>
+            <div class="cart-area">
+              <span>
+                R$149,90
+              </span>
+              <div class="add-cart">
+                <img src="icons/add_shopping_cart-24px.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+    </div>
+  </body>
+</html>
